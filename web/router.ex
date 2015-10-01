@@ -26,6 +26,8 @@ defmodule Support.Router do
     delete "/logout", SessionController, :delete
 
     resources "/issues", IssueController
+    resources "/users", UserController, except: [:new, :edit]
+    
   end
 
   # Other scopes may use custom stacks.
