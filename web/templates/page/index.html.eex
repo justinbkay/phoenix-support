@@ -5,7 +5,8 @@
 <% else %>
   <h2>Welcome Guest</h2>
   <%= link "Register", to: registration_path(@conn, :new), class: "btn btn-primary" %>
-  <%= link "Login", to: session_path(@conn, :new), class: "btn btn-primary" %>
+  or
+  <%= link "Login", to: session_path(@conn, :new), class: "btn btn-success" %>
 <% end %>
   <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
 </div>
